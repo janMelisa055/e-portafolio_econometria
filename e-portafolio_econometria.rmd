@@ -1,0 +1,46 @@
+---
+fontsize: 12pt
+linestretch: 1.5
+header-includes:
+  - \usepackage[document]{ragged2e}
+output: 
+  pdf_document: 
+    latex_engine: xelatex
+
+---
+
+```{r setup, include = FALSE}
+# *Las tildes seran omitidas en los comentarios de los codigos.
+# Workspace:
+knitr::opts_chunk$set(echo = FALSE, comment = NA)
+# Dependencias:
+library(tidyverse)
+library(gt)
+```
+
+```{r, echo=FALSE, fig.align = "left"}
+knitr::include_graphics("logo.png")
+```
+
+\center
+
+# Trabajo E-portafolio Econometría
+## 2023-06/2023-07
+
+```{r, echo=FALSE, fig.align = "center"}
+knitr::include_graphics("coat_of_arms.png")
+```
+
+* Elisa Berger Araya
+* Melissa Sumi Ibata
+
+\newpage
+\justifying
+
+```{r}
+frsi <- function(x){
+  format(x, big.mark = "\u202f", scientific = FALSE,
+    decimal.mark = ",", nsmall = 2L)
+}
+# Formato numerico estilo SI frances.
+```
